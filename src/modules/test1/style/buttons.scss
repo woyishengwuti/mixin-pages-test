@@ -1,0 +1,129 @@
+/*	页面上功能性按钮通用样式	*/
+
+
+/*	按钮组	*/
+
+.btn_group {
+    display: flex;
+    justify-content: center;
+    
+    .btn {
+        cursor: pointer;
+        outline: none;
+        display: inline-block;
+        text-align: center;
+        border: .0625rem solid transparent;
+        background-color: transparent;
+        font-size: .875rem;
+        color: #FFFFFF;
+        font-family: 'PingFangSC-Regular';
+    }
+
+    .btn + .btn {
+        margin-left: 1.25rem;
+    }
+
+    .larger {
+        padding: 1.125rem 6.9375rem;
+    }
+
+    .normal {
+        //弹出上的按钮
+        padding: .75rem 1.875rem;
+    }
+
+    .small {
+        padding: .5625rem 1rem;
+    }
+
+    .btn_success {
+        background-color: #327CF7;
+
+        &:hover {
+            background-color: #1f5ed1;
+        }
+    }
+
+    .btn_print {
+        background-color: #FFCC00;
+
+        &:hover {
+            background-color: #FFCC00;
+        }
+    }
+
+    .btn_cancel {
+        background-color: #FFFFFF;
+        border: .0625rem solid rgba(185, 183, 193, 1);
+        color: #4B4B4B;
+
+        &:hover {
+            background-color: #FFFFFF;
+            border: .0625rem solid rgba(185, 183, 193, 1);
+            color: #4B4B4B;
+        }
+    } 
+}
+
+
+/*	弹层按钮	*/
+
+// .btn-group-layer {
+//     display: flex;
+//     justify-content: flex-end;  /*center  20181108*/
+// }
+
+// .btn-group-layer .btn-success {
+//     padding: 18px 54px;
+//     background-color: #327CF7;
+// }
+
+// .btn-group-layer .btn-success:hover {
+//     background-color: #1f5ed1;
+// }
+
+// .btn-group-layer .btn-cancle {
+//     padding: 18px 54px;
+//     background-color: #FFFFFF;
+//     border: 1px solid #B9B7C2;
+//     color: #4B4B4B;
+// } 
+
+// .btn-group-layer .btn + .btn {
+//     margin-left: 60px;
+// } 
+
+/*双人核对层上按钮间距*/
+
+// .btn-group-check .btn + .btn {
+//     margin-left: 340px;
+// } 
+
+
+/*	搜索(任意使用)	*/
+
+input.search_input {
+    box-sizing: border-box;
+    width: 12.5rem;
+    height: 2rem;
+    text-align: left;
+    padding-left: 2.5rem;
+    border: .0625rem solid #F0F0F0;
+    background: rgba(243, 243, 243, 1) url('../assets/imgs/search_input.png') no-repeat .6875rem .6875rem;
+    background-size: 1.5rem 1.5rem;
+}
+
+input.search_input::-webkit-input-placeholder {
+	text-align: left;
+    font-size: 1.25rem;
+    // transform: translate(0, 2px);
+	color: rgba(166, 166, 166, 1);
+	font-family: 'PingFangSC-Regular';
+}
+
+input.search_input_large {
+    width: 23rem;
+    height: 2.875rem;
+    font-size: 1.25rem;
+    line-height: 2.875rem;
+}

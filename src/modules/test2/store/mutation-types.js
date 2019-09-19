@@ -1,0 +1,14 @@
+export const UNDERYLINGDATA = 'UNDERYLINGDATA' //底层数据
+export const PATIENTSINFO = 'PATIENTSINFO' //病人数据
+export const CURR = 'CURR' //病人卡下分页所在第几页
+export const CURREQUIP = 'CURREQUIP' //病人卡下分页所在第几页
+export const CLICKMENU = 'CLICKMENU' //点击的左侧菜单 通知有需要的页面处理
+export const CHECKSTATE = 'CHECKSTATE' //双人核对标志
+export const AUTOSUBMIT = 'AUTOSUBMIT' //未点击确定自动提交数据
+export const ZDGROUP = 'ZDGROUP' //未点击确定自动提交数据
+export const LAYER = 'LAYER' //层数据
+export const CS = 'CS' //参数
+export const ISREADLOCKSTATUS = 'ISREADLOCKSTATUS' //标记是否正在读取锁状态
+export const AUDIOSRC = 'AUDIOSRC' //标记是否正在读取锁状态AUDIOSRC
+export const UNLOCKEDARR = 'UNLOCKEDARR' //开着的层数据
+export const DRUG = 'DRUG' //药品数据

@@ -3,18 +3,29 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "serve": "echo \"Error: no sys specified, use npm run dev:sys_name instead\" && exit 1",
+    "serve:test1": "vue-cli-service serve --mode dev.test1",
+    "serve:test2": "vue-cli-service serve --mode dev.test2",
+    "build": "echo \"Error: no sys specified, use npm run dev:sys_name instead\" && exit 1",
+    "build:test1": "vue-cli-service build --mode prod.test1",
+    "build:test2": "vue-cli-service build --mode prod.test2",
+    "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "axios": "^0.18.0",
+    "element-ui": "^2.6.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-vue": "^5.2.3",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"

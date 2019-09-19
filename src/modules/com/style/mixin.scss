@@ -1,0 +1,49 @@
+// 背景图片地址和大小
+@mixin bis($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+//定位上下左右居中
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//定位上下居中
+@mixin vercenter {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+//flex 竖直方向上的布局布局和 子元素 对其方式
+@mixin verflex {
+  display: flex;
+  flex-direction: column;
+}
+
+//flex 布局和 子元素 对其方式
+@mixin flex($type: space-between) {
+  display: flex;
+  justify-content: $type;
+}
+
+//定义一个混合宏
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
